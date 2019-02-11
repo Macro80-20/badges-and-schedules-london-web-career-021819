@@ -3,7 +3,7 @@
 list= ["Edsger","Ada","Charles","Alan","Grace","Linus","Matz"]
 
 def badge_maker(name)
-  return "Hello, my name is #{name}."
+puts "Hello, my name is #{name}."
 end
 
 def batch_badge_creator(arr)
@@ -18,12 +18,8 @@ def assign_rooms(guests)
 end
 
 def printer(attendees)
-  batch_badge_creator(attendees).each do |value|
-    puts value
-  end
-  assign_rooms(attendees).each do |value|
-    puts value
-  end
+  batch_badge_creator(attendees)
+  assign_rooms(attendees)
 end
 
 #def sum (arr)
