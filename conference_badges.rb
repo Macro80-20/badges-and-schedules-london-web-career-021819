@@ -14,7 +14,7 @@ def assign_rooms(guests)
   room_assignments = 0
   guests.map { |guest_name|
     room_assignments +=1
-    "Hello, #{guest_name}! You'll be assigned to room #{room_assignments}!" }
+    puts "Hello, #{guest_name}! You'll be assigned to room #{room_assignments}!" }
 end
 
 def printer(attendees)
